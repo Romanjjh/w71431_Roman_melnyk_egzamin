@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<title>Formularz rejestracyjny</title>
+<link rel="stylesheet" href="h2.css">
+<script src="ef3.js" defer></script>
+
+</head>
+<body>
+
+<h2>Formularz rejestracyjny</h2>
+
+<form id="registrationForm" novalidate>
+  <label>
+    Email:
+    <input type="email" id="email" name="email" required />
+  </label>
+  <div id="emailError" class="error"></div>
+  
+  <label>
+    Hasło:
+    <input type="password" id="password" name="password" required />
+  </label>
+  <div id="passwordError" class="error"></div>
+  
+  <label>
+    Kraj:
+    <select id="country" name="country" required>
+      <option value="">-- Wybierz kraj --</option>
+      <option value="PL">Polska</option>
+      <option value="DE">Niemcy</option>
+      <option value="FR">Francja</option>
+      <option value="UK">Wielka Brytania</option>
+      <option value="US">USA</option>
+    </select>
+  </label>
+  <div id="countryError" class="error"></div>
+  
+  <button type="submit">Zarejestruj się</button>
+</form>
+
+
+
+</body>
+</html>
